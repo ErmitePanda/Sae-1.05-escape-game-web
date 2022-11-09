@@ -22,4 +22,4 @@ Vous devrez mettre en application les techniques que vous avez apprises lors des
 1. Les codes CSS et HTML seront lisibles et correctement indentés. L’utilisation de CSS de style inline est interdit.
 2. L’utilisation de framework tels que bootstrap, foundation, etc. n’est pas autorisée.
 3. L’utilisation des float ou des tableaux n’est pas autorisée pour la mise en page, c’est-à-dire par exemple pour mettre une colonne à côté d’une autre …
-4. L’utilisation des <br> n’est pas autorisée pour la mise en page. Si vous voulez sauter à la ligne dans un texte, cela correspond sûrement à un paragraphe <p>. Si vous voulez espacer des blocs, il faut mettre des marges en bas.
+4. L’utilisation des '''<br>''' n’est pas autorisée pour la mise en page. Si vous voulez sauter à la ligne dans un texte, cela correspond sûrement à un paragraphe '''<p>'''. Si vous voulez espacer des blocs, il faut mettre des marges en bas.
