@@ -1,0 +1,335 @@
+* {
+    /* reset */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    /* Police d'écriture */
+    font-family: Arial;
+}
+
+/* Le body contiendra le fond d'écran de toute la page */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url("/img/Fond du site.jpg");
+}
+
+/* Contiendra le titre du site et en dessous la barre de menu la barre de menu */
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0px;
+}
+
+/* Style pour la barre de menu */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background: beige;
+    align-items: stretch;
+}
+
+nav > div {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    align-items: stretch;
+}
+
+#flexLien {
+    justify-content: flex-end;
+}
+
+#flexLien > div {
+    display: flex;
+    margin: 0 2% 0 2%;
+    position: relative;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
+#flexLogo {
+    justify-content: left;
+    width: 10%;
+}
+
+#logoNav {
+    width: 90%;
+}
+
+#flexLien > div > a {
+    font-weight: bold;
+}
+
+/* Style sur les div enfant direct de nav */
+
+.submenu {
+    display: none;
+}
+
+#flexLien > div:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: beige;
+    top: 80px;
+    font-size: 15px;
+    box-shadow: 0px 0px 15px 3px #0000007A;
+}
+
+
+
+.submenu a:hover {
+    color: red;
+}
+
+/*    Structure principale du site    */
+
+/* Section principale */
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Les paragraphes */
+
+p {
+    text-align: justify;
+}
+
+article {
+    width: 75%;
+    margin: 100px auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px 3px #0000007A;
+    text-align: center;
+    background-image: url("/img/fond des articles.png");
+}
+
+/* Article sur le déroulement */
+
+main > article:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image des articles */
+
+.chess {
+    width: 35%;
+}
+
+.blakman {
+    width: 75%;
+}
+
+.chrono {
+    width: 25%;
+}
+
+.deroulement > div p {
+    text-align: center;
+}
+
+/*-----------------------------------
+        Partie deroulement
+-----------------------------------*/
+
+/* h2 du deroulement */
+
+.deroulement > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.deroulement p {
+    width: 75%;
+    margin: 25px auto;
+}
+
+.deroulement h2 {
+    font-size: 50px;
+
+    /* top right bottom left */
+
+    margin: 25px 0px 50px 0px;
+    padding: 25px 0 25px 0;
+}
+
+.Marmite {
+    margin-bottom: 44.5px;
+}
+
+.Chrono {
+    margin-bottom: 15.11px;
+}
+
+/* Partie sur Toutes les salles */
+
+.salles h2 {
+    font-size: 50px;
+
+    /* top right bottom left */
+
+    margin: 50px 0px 50px 0px;
+    padding: 25px 0 25px 0;
+}
+
+#flexNav {
+    display: flex;
+    align-items: flex-end;
+}
+
+.deroulement > div > div {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.imgD {
+    width: 130px;
+}
+
+#imgSalle1 {
+    width: 200px;
+}
+
+#imgSalle2 {
+    width: 300px;
+}
+
+/*-----------------------------------
+        Partie Toutes le salles
+-----------------------------------*/
+
+article > div {
+    display: flex;
+    align-items: center;
+}
+
+.salles > div {
+    display: flex;
+    margin: 50px 100px;
+}
+
+/*-----------------------------------
+        Partie Salle 1
+-----------------------------------*/
+
+.salle1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.salle1 img {
+    margin-right: 50px;
+}
+
+/*-----------------------------------
+        Partie Salle 2
+-----------------------------------*/
+
+.salle2 {
+    flex-direction: column;
+}
+
+.salle2 > div {
+    flex-direction: row-reverse;
+}
+
+.salle2 img {
+    margin-left: 50px;
+}
+
+/*-----------------------------------
+        Partie Salle 3
+-----------------------------------*/
+
+/* Partie pieds de la page */
+
+footer {
+    display: flex;
+    background: beige;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+footer h4 {
+    font-size: 30px;
+    margin: 50px auto;
+}
+
+/* Partie right du site */
+
+#mail {
+    display: flex;
+    flex-direction: column;
+}
+
+#mail > li {
+    margin-bottom: 5px;
+}
+
+/* Partie right du site */
+
+.logo {
+    width: 10%;
+    margin: 10px 25px;
+}
+
+.réseau-socio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* ------------------------------- */
+
+/* Redirection site */
+
+#flecheHaut {
+    position: fixed;
+    bottom: 150px;
+    right: 25px;
+}
+
+.fleche {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 25px;
+    border-radius: 100%;
+    background-size: 200%;
+    transition: 0.6s;
+    background-image: linear-gradient(to left, #00f260, #0575e6);
+}
+
+#flecheBas {
+    bottom: 50px;
+    transform: rotate(180deg);
+}
+
+.fleche:hover {
+    background-position: right;
+}
+
+/*-----------------*/
